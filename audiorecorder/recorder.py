@@ -4,7 +4,7 @@ import urllib.request
 from _thread import start_new_thread
 
 from PySide6.QtWidgets import QWidget, QApplication
-from audiorecorder.view import Ui_main_widget
+from audiorecorder.view import UiMainWidget
 
 
 class AudiorecorderController(QWidget):
@@ -12,7 +12,7 @@ class AudiorecorderController(QWidget):
         super().__init__()
 
         # init and setup view:
-        self.audio_recorder_view = Ui_main_widget()
+        self.audio_recorder_view = UiMainWidget()
         self.audio_recorder_view.setupUi(self)
 
         # init record button and connect click event
